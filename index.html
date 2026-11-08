@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFCA1; /* Màu nền vàng nhạt toàn trang */
+            margin: 20px;
+        }
+
+        .form-container {
+            width: 500px;
+            background-color: #FFFCA1;
+        }
+
+        .form-title {
+            background-color: #CCFFFF; /* Màu nền xanh nhạt của tiêu đề */
+            color: #0000FF; /* Chữ màu xanh dương */
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+
+        .form-group label {
+            width: 120px;
+            color: #000080; /* Màu chữ xanh navy */
+            font-size: 15px;
+            padding-top: 3px;
+        }
+
+        .form-control {
+            width: 250px;
+            padding: 4px;
+            border: 1px solid #7F9DB9;
+            box-sizing: border-box;
+        }
+
+        textarea.form-control {
+            width: 250px;
+            height: 80px;
+            resize: none;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+
+        .button-group {
+            margin-left: 120px;
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 4px 15px;
+            background-color: #E1E1E1;
+            border: 1px solid #707070;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #D4D4D4;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <div class="form-title">Đăng ký học viên</div>
+
+    <form>
+        <div class="form-group">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname" class="form-control" autofocus>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Ngày sinh</label>
+            <input type="text" id="dob" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính</label>
+            <div class="radio-group">
+                <label style="width: auto; color: black;"><input type="radio" name="gender" value="nam"> Nam</label>
+                <label style="width: auto; color: black;"><input type="radio" name="gender" value="nu"> Nữ</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <textarea id="address" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="class">Lớp</label>
+            <select id="class" class="form-control">
+                <option value="">— Chọn lớp —</option>
+                <option value="lop1">Lớp 1</option>
+                <option value="lop2">Lớp 2</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Điện thoại</label>
+            <input type="text" id="phone" class="form-control">
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
